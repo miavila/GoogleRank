@@ -65,8 +65,8 @@ function mejorPosicion ($palabra){
 }
 
 // ENVIAR MAIL //
-// $to = "mia@swhosting.com";
+// $to = "my@domain.com";
 // $subject = "Google Rank SWHosting";
 // $message = file_get_contents(DIR.'/google_rank.txt')."\n".'Fechas Mejores Posiciones:'."\n".$mejorPosicion;
-// $headers = "From: mia@swhosting.com" . "\r\n" . "CC: pagut@swhosting.com";
+// $headers = "From: my@domain.com" . "\r\n" . "CC: your@domain.com";
 // mail($to, $subject, $message, $headers);
