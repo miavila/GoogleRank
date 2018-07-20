@@ -1,7 +1,6 @@
 <?php
 // BUSCAR CADENA EN BASE_DIR //
 define ('DIR','/var/www/googlerank.sw/');
-// define ('DIR','C:/AppServ/www/googlerank.sw/');
 define('BASE_DIR','http://www.google.com/search?hl=es&q=');
 $palabras = array ('servidores+cloud', 'servidor+cloud', 'cloud+administrado', 'housing+servidores', 'cloud+profesional');
 $cadena = 'swhosting';
@@ -65,8 +64,14 @@ function mejorPosicion ($palabra){
 }
 
 // ENVIAR MAIL //
-$to = "yo@correo.com";
+$to = "mia@swhosting.com";
 $subject = "Google Rank SWHosting";
 $message = file_get_contents(DIR.'/google_rank.txt')."\n".'Fechas Mejores Posiciones:'."\n".$mejorPosicion;
-$headers = "From: yo@correo.com" . "\r\n" . "CC: tu@correo.com";
+$headers = "From: mia@swhosting.com" . "\r\n" . "CC: pagut@swhosting.com";
 mail($to, $subject, $message, $headers);
+
+// $to = "yo@correo.com";
+// $subject = "Google Rank SWHosting";
+// $message = file_get_contents(DIR.'/google_rank.txt')."\n".'Fechas Mejores Posiciones:'."\n".$mejorPosicion;
+// $headers = "From: yo@correo.com" . "\r\n" . "CC: tu@correo.com";
+// mail($to, $subject, $message, $headers);
